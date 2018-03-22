@@ -1,0 +1,38 @@
+@import "font-awesome";
+@import "./config/reset";
+@import "./config/variable";
+@import "./messages";
+
+body {
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.styled-flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  &.between {
+    justify-content: space-between;
+  }
+}
+
+.styled-card {
+  box-shadow: 0px 1px 8px rgba(0,0,0,.5);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: $color-gray;
+  margin: 0px 0;
+}
+
+button {
+  width: 80px;
+  height: 30px;
+  padding: 10px;
+  line-height: 10px;
+  &:hover {
+  cursor: pointer;
+  }
+}

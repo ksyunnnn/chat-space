@@ -1,0 +1,34 @@
+.messages-page
+  .side-bar-container
+    .information
+      .styled-flex-wrapper.between
+        .name ksyunnnn
+        .action-menu
+          %span.create-message <i class="fa fa-edit"></i>
+          %span.set-config <i class="fa fa-cog"></i>
+    %hr
+    .group-list
+      - for i in 1..3
+        .group
+          .title First chat
+          .last-message Hello, chat.…
+  .content-container
+    .group-information
+      .info
+        .title First chat
+        .members
+          - for i in 1..3
+            %span.member user#{i}
+      .action
+        %button edit
+    %hr
+    .records
+      .status-bar チャットグループが作成されました。
+      - for i in 1..8
+        .record
+          %span.name ksyunnnn
+          %span.date 2018/03/21 18:46:00
+          .text this is a message.
+    .message-tools.styled-flex-wrapper.between
+      %input
+      %button Send
