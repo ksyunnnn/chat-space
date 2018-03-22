@@ -40,6 +40,9 @@ gem "haml-rails", "~> 1.0"
 # Use font awesome
 gem "font-awesome-rails"
 
+# 'devise' ユーザー管理
+gem 'devise'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

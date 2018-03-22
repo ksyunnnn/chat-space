@@ -1,6 +1,7 @@
 @import "font-awesome";
 @import "./config/reset";
 @import "./config/variable";
+@import "./modules/user";
 @import "./messages";
 
 body {
@@ -35,4 +36,9 @@ button {
   &:hover {
   cursor: pointer;
   }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
