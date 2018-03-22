@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use haml
 gem "haml-rails", "~> 1.0"
+gem 'erb2haml'
 
 # Use font awesome
 gem "font-awesome-rails"

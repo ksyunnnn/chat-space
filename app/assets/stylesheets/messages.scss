@@ -1,11 +1,9 @@
-
 $width-side-bar: 320px;
 $padding-container-row: 20px;
 $height-message-tools: 60px;
-
 $font-size-large: 1.5rem;
 $font-size-medium: 1.2rem;
-$font-size-small: .8rem;
+$font-size-small: 0.8rem;
 
 .messages-page {
   @extend .styled-flex-wrapper;
@@ -18,7 +16,8 @@ $font-size-small: .8rem;
   height: 5vh;
   line-height: 5vh;
   padding: 0 15px;
-  font-size: .8rem;
+  font-size: 0.8rem;
+
   &.notice {
     background: $color-light;
   }
@@ -32,6 +31,7 @@ $font-size-small: .8rem;
   width: $width-side-bar;
   padding: 20px $padding-container-row;
   background: $color-dark;
+
   hr {
     margin-bottom: 30px;
   }
@@ -40,16 +40,19 @@ $font-size-small: .8rem;
 .information {
   height: 20vh;
   line-height: 20vh;
+
   .name {
     font-size: $font-size-medium;
   }
+
   span {
     font-size: $font-size-large;
     margin: 0 3px;
+
     &:hover {
-    cursor: pointer;
-    opacity: .8;
-  }
+      cursor: pointer;
+      opacity: 0.8;
+    }
   }
 }
 
@@ -57,14 +60,16 @@ $font-size-small: .8rem;
   .group {
     margin: 5px 0;
     padding: 5px 0;
+
     .last-message {
       margin-left: 5px;
       color: $color-white;
       font-size: $font-size-small;
     }
+
     &:hover {
       cursor: pointer;
-      opacity: .8;
+      opacity: 0.8;
     }
   }
 }
@@ -80,10 +85,12 @@ $font-size-small: .8rem;
   @extend .between;
   height: 20vh;
   box-sizing: border-box;
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 0;
+
   .title {
     font-size: $font-size-large;
   }
+
   .action {
     button {
       margin-right: 10px;
@@ -92,25 +99,29 @@ $font-size-small: .8rem;
 }
 
 .records {
-
   overflow: auto;
   box-sizing: border-box;
   padding: 15px $padding-container-row;
   height: 80vh;
   padding-bottom: $height-message-tools;
+
   .record {
     border-bottom: 1px solid $color-gray;
     width: 60%;
     padding: 10px 20px;
     margin: 10px 5px;
-    .name, .date{
+
+    .date,
+    .name {
       font-size: $font-size-small;
     }
+
     .text {
       min-height: 40px;
     }
   }
 }
+
 .message-tools {
   @extend .styled-card;
   width: 100%;
@@ -123,16 +134,19 @@ $font-size-small: .8rem;
   top: -$height-message-tools;
   line-height: 10vh;
   background: $color-gray;
+
   input {
     width: 80%;
     font-size: $font-size-medium;
   }
+
   button {
     width: 15%;
     background: $color-primary;
+
     &:hover {
       cursor: pointer;
-      opacity: .8;
+      opacity: 0.8;
     }
   }
 }
