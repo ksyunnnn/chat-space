@@ -1,0 +1,21 @@
+.group-information
+  .info
+    .title First chat
+    .members
+      - for i in 1..3
+        %span.member user#{i}
+  .action
+    = link_to edit_group_path(@group) do
+      %button edit
+%hr
+.records
+  - flash.each do |key, value|
+    = content_tag :div, value, class: key+' status-bar'
+  - for i in 1..8
+    .record
+      %span.name ksyunnnn
+      %span.date 2018/03/21 18:46:00
+      .text this is a message.
+.message-tools.styled-flex-wrapper.between
+  %input
+  %button Send

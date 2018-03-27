@@ -13,3 +13,8 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+// notice消す
+window.setTimeout(()=>{
+  document.querySelector('.notice').classList.add('hidden-with-animation')
+}, "3000")
