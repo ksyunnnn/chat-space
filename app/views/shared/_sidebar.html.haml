@@ -2,7 +2,8 @@
   .information
     .styled-flex-wrapper.between
       .name
-        = current_user.name
+        = link_to root_path do
+          = current_user.name
       .action-menu
         %span.create-message
           = link_to new_group_path do
