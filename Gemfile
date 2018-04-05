@@ -44,6 +44,9 @@ gem "font-awesome-rails"
 # 'devise' ユーザー管理
 gem 'devise'
 
+# Carrierwave 画像登録
+gem 'carrierwave'
+gem 'mini_magick'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -51,6 +54,11 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+
+  # デバッグ結果をみやすくするために追加
+  gem 'hirb'
+  gem 'hirb-unicode'
+  gem 'pry-byebug'
 end
 
 group :development do
